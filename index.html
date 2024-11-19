@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Gastronomique</title>
+    <title>TimeReal</title>
 </head>
 
 <body>
     <header>
-        <h1 class="text-center text-uppercase border border-dark m-0 bg-secondary-emphasis">TimeReal</h1>
+        <h1 class="text-center text-uppercase m-0 bg-dark text-light">TimeReal</h1>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <img class="logo" src="logo.png" alt="">
-            <div class="carousel-inner">
+            <div class="carousel-inner rounded">
                 <div class="carousel-item active salade">
                 </div>
                 <div class="carousel-item sushi">
@@ -46,167 +46,336 @@
             </button>
         </div>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary border border-dark ">
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">entrée</a>
-                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">plat</a>
-                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">dessert</a>
-                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">boisson</a>
-                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">partenaires</a>
+        <nav class="navbar navbar-expand-lg p-0 bg-dark">
+            <div class="collapse navbar-collapse sticky-top" id="navbarNav">
+                <div class="dropdown">
+                    <a class="btn btn-emphasis text-light dropdown-toggle p-3" href="#scrollspyHeading1" role="button"
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Entrée
+                    </a>
+                    <ul class="dropdown-menu bg-primary" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Salade composé</a></li>
+                        <li><a class="dropdown-item" href="#">Sushi</a></li>
+                        <li><a class="dropdown-item" href="#">Toast</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-emphasis text-light dropdown-toggle p-3 " href="#scrollspyHeading2" role="button"
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Plat
+                    </a>
+                    <ul class="dropdown-menu  bg-primary" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Côte de boeuf</a></li>
+                        <li><a class="dropdown-item" href="#">Huîtres</a></li>
+                        <li><a class="dropdown-item" href="#">Tartare de boeuf</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-emphasis text-light dropdown-toggle p-3" href="#scrollspyHeading3" role="button"
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dessert
+                    </a>
+                    <ul class="dropdown-menu  bg-primary" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Cheesecake</a></li>
+                        <li><a class="dropdown-item" href="#">Choux</a></li>
+                        <li><a class="dropdown-item" href="#">Millefeuilles</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-emphasis text-light dropdown-toggle p-3" href="#scrollspyHeading4" role="button"
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Boisson
+                    </a>
+                    <ul class="dropdown-menu  bg-primary" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Champagne</a></li>
+                        <li><a class="dropdown-item" href="#">Cocktail fruités</a></li>
+                        <li><a class="dropdown-item" href="#">Rosé</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a class="btn btn-emphasis text-light dropdown-toggle p-3" href="#" role="button"
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Partenaires
+                    </a>
+                    <ul class="dropdown-menu  bg-primary" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Théo</a></li>
+                        <li><a class="dropdown-item" href="#">Said</a></li>
+                        <li><a class="dropdown-item" href="#">Ridha</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
     </header>
-    <h2 class="text-center text-uppercase m-5">entrée</h2>
-    <section class="cardentree d-flex justify-content-evenly">
-        <div class="card shadow rounded">
-            <img src="./imgentree/salade.jpg" class="card-img-top" alt="...">
-            <div class="card-first">
-                <h2 class="text-center text-capitalize m-2">Salade composé</h2>
-                <div class="price d-flex align-items-end pt-5">
-                    <div class="p-2 flex-grow-1 fw-bold">40€</div>
-                    <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover" data-bs-placement="right"
-                        data-bs-custom-class="custom-popover" data-bs-title="Salade Composé"
-                        data-bs-content="Salade, radis, crevette,pomme de p.">
-                        + infos
-                    </button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Commander
-                    </button>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0">
+        <h2 class="titre text-center text-uppercase m-5" id="scrollspyHeading1">entrée</h2>
+        <class class="cardentree d-flex justify-content-evenly">
+            <div class="card shadow rounded">
+                <img src="./imgentree/salade.jpg" class="card-img-top" alt="...">
+                <div class="card-first">
+                    <h2 class="text-center text-capitalize m-2">Salade composé</h2>
+                    <div class="price d-flex align-items-end pt-5 pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">40€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Salade Composé"
+                            data-bs-content="Salade, radis, crevette,pomme de p.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Bonne Appétit !</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Votre plat et en préparation
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fermer</button>
-                                    <button type="button" class="btn btn-primary">Payer</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Bonne Appétit !</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Votre plat et en préparation
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-primary">Payer</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="card shadow rounded">
-            <img src="./imgentree/sushi.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-0">
-                <h2 class="text-center m-2">Sushi</h2>
-                <div class="prix d-flex pt-5">
-                <div class="p-2 flex-grow-1 fw-bold">60€</div>
-                    <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover" data-bs-placement="right"
-                        data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
-                        data-bs-content="Riz, Sauce créme, wasabi, cripsy oignon.">
-                        + infos
-                    </button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Commander
-                    </button>
+            <div class="card shadow rounded">
+                <img src="./imgentree/sushi.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h2 class="text-center m-2">Sushi</h2>
+                    <div class="prix d-flex pt-5  pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">60€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Riz, Sauce créme, wasabi, cripsy oignon.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card shadow rounded">
-            <img src="./imgentree/toast.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text text-center text-capitalize">toast sur oeuf façon omelette.</p>
+            <div class="card shadow rounded">
+                <img src="./imgentree/toast.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h2 class="text-center m-2">Toast</h2>
+                    <div class="prix d-flex pt-5  pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">55€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Toast, omelette, radis, pastrami, persil.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <h2 class="text-center text-uppercase m-5">Plats</h2>
-    <section class="cardplat d-flex justify-content-evenly">
-        <div class="card shadow rounded">
-            <img src="./imgplat/cotedeboeuf1.jpg" class="card-img-top" alt="...">
-            <div class="card-second">
-                <p class="card-text text-center text-capitalize">
-                    Côtes de boeuf.
-                </p>
+        </class>
+        </section>
+        <h2 class="titre text-center text-uppercase m-5" id="scrollspyHeading2">Plats</h2>
+        <section class="cardplat d-flex justify-content-evenly">
+            <div class="card shadow rounded">
+                <img src="./imgplat/cotedeboeuf1.jpg" class="card-img-top" alt="...">
+                <div class="card-second ">
+                    <h2 class="text-center m-2">Côtes de boeuf</h2>
+                    <div class="prix d-flex pt-5  pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">90€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Côtes de boeuf cuit a l'ettoufé, piment, persil.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card shadow rounded">
-            <img src="./imgplat/Huitre1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text text-center">Huitre.</p>
+            <div class="card shadow rounded">
+                <img src="./imgplat/Huitre1.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h2 class="text-center m-2">Huîtres</h2>
+                    <div class="prix d-flex pt-5 pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">85€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Huîtres fraiches.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card shadow rounded">
-            <img src="./imgplat/Tartare1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text text-center text-capitalize">Tartare.</p>
+            <div class="card shadow rounded">
+                <img src="./imgplat/Tartare1.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h2 class="text-center m-2">Tartare de boeuf</h2>
+                    <div class="prix d-flex pt-5 pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">100€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Piéce de boeuf, rosalidad mangue.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <h2 class="text-center text-uppercase m-5">dessert</h2>
-    <section class="carddessert d-flex justify-content-evenly">
-        <div class="card shadow rounded">
-            <img src="./imgdessert/cheesecake12.jpg" class="card-img-top" alt="...">
-            <div class="card-third">
-                <p class="card-text text-center text-capitalize">
-                    Cheesecake.
-                </p>
+        </section>
+        <h2 class="titre text-center text-uppercase m-5" id="scrollspyHeading3">dessert</h2>
+        <section class="carddessert d-flex justify-content-evenly">
+            <div class="card shadow rounded">
+                <img src="./imgdessert/cheesecake12.jpg" class="card-img-top" alt="...">
+                <div class="card-third">
+                    <h2 class="text-center m-2">Cheesecake</h2>
+                    <div class="prix d-flex pt-5 pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">60€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Cheesecake, banane grillé, chocolat.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card shadow rounded">
-            <img src="./imgdessert/chouxchocolat1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text text-center">Choux avec coulis de chocolat.</p>
+            <div class="card shadow rounded">
+                <img src="./imgdessert/chouxchocolat1.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h2 class="text-center m-2">Choux</h2>
+                    <div class="prix d-flex pt-5 pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">65€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Choux, créme, coulis chocolat.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card shadow rounded">
-            <img src="./imgdessert/millefeuille.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text text-center text-capitalize">Millefeuille avec sa couche de caramel.</p>
+            <div class="card shadow rounded">
+                <img src="./imgdessert/millefeuille.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h2 class="text-center m-2">Millefeuilles</h2>
+                    <div class="prix d-flex pt-5 pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">80€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="millefeuilles, caramel.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <h2 class="text-center text-uppercase m-5">boisson</h2>
-    <section class="cardboisson d-flex justify-content-evenly">
-        <div class="card">
-            <img src="./imgboisson/champagne1.jpg" class="card-img-top" alt="...">
-            <div class="card-four">
-                <p class="card-text text-center text-capitalize">
-                    Champagne.
-                </p>
+        </section>
+        <h2 class="titre text-center text-uppercase m-5" id="scrollspyHeading4">boisson</h2>
+        <section class="cardboisson d-flex justify-content-evenly">
+            <div class="card">
+                <img src="./imgboisson/champagne1.jpg" class="card-img-top" alt="...">
+                <div class="card-four">
+                    <h2 class="text-center m-2">Champagne</h2>
+                    <div class="prix d-flex pt-5 pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">150€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Alcoolisé.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./imgboisson/fruit.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text text-center">Cocktail au fruit.</p>
+            <div class="card">
+                <img src="./imgboisson/fruit.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h2 class="text-center m-2">Cocktail fruit frais</h2>
+                    <div class="prix d-flex pt-5 pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">90€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Soft fruit, fraise,kiwi,citron vert,mangue.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="./imgboisson/rose.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text text-center text-capitalize">Rosé.</p>
+            <div class="card">
+                <img src="./imgboisson/rose.jpg" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h2 class="text-center m-2">Rosé</h2>
+                    <div class="prix d-flex pt-5 pb-2 pe-2">
+                        <div class="p-2 flex-grow-1 fw-bold">110€</div>
+                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
+                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                            data-bs-content="Vin rosé.">
+                            + infos
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Commander
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <footer>
 
 
-    </footer>
+        </footer>
 
-
-    <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
-    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-            popoverTriggerList.forEach(function (popoverTriggerEl) {
-                new bootstrap.Popover(popoverTriggerEl);
+        <script src=""></script>
+        <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+        <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+                popoverTriggerList.forEach(function (popoverTriggerEl) {
+                    new bootstrap.Popover(popoverTriggerEl);
+                });
             });
-        });
-    </script>
+        </script>
 
 </body>
 
