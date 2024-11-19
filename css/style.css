@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+body {
+    background: #F3E1CE;
+}
+
 * {
     font-family: "roboto", sans-serif;
 }
@@ -9,7 +13,78 @@
     flex-basis: auto;
     justify-content: space-around;
 }
-img {
-    height: 35rem;
+
+.price {
+    height: 100%;
 }
 
+.carousel-item {
+    height: 40rem;
+}
+
+.salade {
+    background-image: url(../imgentree/salade.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sushi {
+    background-image: url(../imgentree/sushi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.toast {
+    background-image: url(../imgentree/toast.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.boeuf {
+    background-image: url(../imgplat/cotedeboeuf.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.huitre {
+    background-image: url(../imgplat/Huitre.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tartare {
+    background-image: url(../imgplat/Tartare.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cheesecake {
+    background-image: url(../imgdessert/cheesecake.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.choux {
+    background-image: url(../imgdessert/chouxchocolat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.millefeuille {
+    background-image: url(../imgdessert/millefeuillecaramel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card {
+    width: 30rem;
+    height: max-content;
+}
+
+.logo {
+    position: absolute;
+    z-index: 10;
+    left: 38%;
+    opacity: 80%;
+}
