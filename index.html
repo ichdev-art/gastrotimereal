@@ -15,13 +15,13 @@
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <img class="logo" src="logo.png" alt="">
             <div class="carousel-inner">
-              <div class="carousel-item active salade">
-              </div>
-              <div class="carousel-item sushi">
-              </div>
-              <div class="carousel-item toast">
-              </div>
-              <div class="carousel-item boeuf">
+                <div class="carousel-item active salade">
+                </div>
+                <div class="carousel-item sushi">
+                </div>
+                <div class="carousel-item toast">
+                </div>
+                <div class="carousel-item boeuf">
                 </div>
                 <div class="carousel-item huitre">
                 </div>
@@ -34,143 +34,161 @@
                 <div class="carousel-item millefeuille">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="carousel"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="carousel"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="carousel"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="carousel"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
-          
+        </div>
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary border border-dark ">
             <div class="collapse navbar-collapse" id="navbarNav">
-                
-                        <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">entrée</a>
-                        <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">plat</a>
-                        <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">dessert</a>
-                        <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">boisson</a>
-                        <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">partenaires</a>
-            </div> 
+
+                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">entrée</a>
+                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">plat</a>
+                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">dessert</a>
+                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">boisson</a>
+                <a class="nav-link active text-uppercase fw-bold" aria-current="page" href="#">partenaires</a>
+            </div>
     </header>
-        <h2 class="text-center text-uppercase m-5">entrée</h2>
+    <h2 class="text-center text-uppercase m-5">entrée</h2>
     <section class="cardentree d-flex justify-content-evenly">
         <div class="card shadow rounded">
             <img src="./imgentree/salade.jpg" class="card-img-top" alt="...">
             <div class="card-first">
                 <h2 class="text-center text-capitalize m-2">Salade composé</h2>
                 <div class="price d-flex align-items-end pt-5">
-                    <div class="p-2 flex-grow-1 fw-bold">Prix</div>
-                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                    <div class="p-2 flex-grow-1 fw-bold">40€</div>
+                    <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover" data-bs-title="Salade Composé"
+                        data-bs-content="Salade, radis, crevette,pomme de p.">
                         + infos
-                      </button>
+                    </button>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Commander
-                      </button>
-                      
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Bonne Appétit !</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Bonne Appétit !</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Votre plat et en préparation
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+                                    <button type="button" class="btn btn-primary">Payer</button>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                              Votre plat et en préparation
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                              <button type="button" class="btn btn-primary">Payer</button>
-                            </div>
-                          </div>
                         </div>
-                      </div>
-                  </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card shadow rounded">
+        </div>
+        <div class="card shadow rounded">
             <img src="./imgentree/sushi.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text text-center">Sushi au wasabi</p>
+            <div class="card-body p-0">
+                <h2 class="text-center m-2">Sushi</h2>
+                <div class="prix d-flex pt-5">
+                <div class="p-2 flex-grow-1 fw-bold">60€</div>
+                    <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        data-bs-content="Riz, Sauce créme, wasabi, cripsy oignon.">
+                        + infos
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Commander
+                    </button>
+                </div>
             </div>
-          </div>    
-          <div class="card shadow rounded">
+        </div>
+        <div class="card shadow rounded">
             <img src="./imgentree/toast.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-center text-capitalize">toast sur oeuf façon omelette.</p>
+                <p class="card-text text-center text-capitalize">toast sur oeuf façon omelette.</p>
             </div>
-          </div>
+        </div>
     </section>
     <h2 class="text-center text-uppercase m-5">Plats</h2>
     <section class="cardplat d-flex justify-content-evenly">
         <div class="card shadow rounded">
             <img src="./imgplat/cotedeboeuf1.jpg" class="card-img-top" alt="...">
             <div class="card-second">
-              <p class="card-text text-center text-capitalize">
-                Côtes de boeuf.
-              </p>
+                <p class="card-text text-center text-capitalize">
+                    Côtes de boeuf.
+                </p>
             </div>
-          </div>
-          <div class="card shadow rounded">
+        </div>
+        <div class="card shadow rounded">
             <img src="./imgplat/Huitre1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-center">Huitre.</p>
+                <p class="card-text text-center">Huitre.</p>
             </div>
-          </div>    
-          <div class="card shadow rounded">
+        </div>
+        <div class="card shadow rounded">
             <img src="./imgplat/Tartare1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-center text-capitalize">Tartare.</p>
+                <p class="card-text text-center text-capitalize">Tartare.</p>
             </div>
-          </div>
+        </div>
     </section>
     <h2 class="text-center text-uppercase m-5">dessert</h2>
     <section class="carddessert d-flex justify-content-evenly">
         <div class="card shadow rounded">
             <img src="./imgdessert/cheesecake12.jpg" class="card-img-top" alt="...">
             <div class="card-third">
-              <p class="card-text text-center text-capitalize">
-                Cheesecake.
-              </p>
+                <p class="card-text text-center text-capitalize">
+                    Cheesecake.
+                </p>
             </div>
-          </div>
-          <div class="card shadow rounded">
+        </div>
+        <div class="card shadow rounded">
             <img src="./imgdessert/chouxchocolat1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-center">Choux avec coulis de chocolat.</p>
+                <p class="card-text text-center">Choux avec coulis de chocolat.</p>
             </div>
-          </div>    
-          <div class="card shadow rounded">
+        </div>
+        <div class="card shadow rounded">
             <img src="./imgdessert/millefeuille.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-center text-capitalize">Millefeuille avec sa couche de caramel.</p>
+                <p class="card-text text-center text-capitalize">Millefeuille avec sa couche de caramel.</p>
             </div>
-          </div>
+        </div>
     </section>
     <h2 class="text-center text-uppercase m-5">boisson</h2>
     <section class="cardboisson d-flex justify-content-evenly">
         <div class="card">
             <img src="./imgboisson/champagne1.jpg" class="card-img-top" alt="...">
             <div class="card-four">
-              <p class="card-text text-center text-capitalize">
-                Champagne.
-              </p>
+                <p class="card-text text-center text-capitalize">
+                    Champagne.
+                </p>
             </div>
-          </div>
-          <div class="card">
+        </div>
+        <div class="card">
             <img src="./imgboisson/fruit.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-center">Cocktail au fruit.</p>
+                <p class="card-text text-center">Cocktail au fruit.</p>
             </div>
-          </div>    
-          <div class="card">
+        </div>
+        <div class="card">
             <img src="./imgboisson/rose.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text text-center text-capitalize">Rosé.</p>
+                <p class="card-text text-center text-capitalize">Rosé.</p>
             </div>
-          </div>
+        </div>
     </section>
 
     <footer>
@@ -181,8 +199,15 @@
 
     <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
-    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
-    <script src="node_modules\@popperjs\core\dist\umd\popper.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            popoverTriggerList.forEach(function (popoverTriggerEl) {
+                new bootstrap.Popover(popoverTriggerEl);
+            });
+        });
+    </script>
+
 </body>
 
 </html>

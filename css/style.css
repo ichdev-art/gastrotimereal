@@ -88,3 +88,7 @@ body {
     left: 38%;
     opacity: 80%;
 }
+.d-flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
