@@ -47,13 +47,13 @@
         </div>
 
         <nav class="navbar navbar-expand-lg p-0 bg-dark">
-            <div class="collapse navbar-collapse sticky-top" id="navbarNav">
+            <div class="collapse navbar-collapse " id="navbarNav">
                 <div class="dropdown">
-                    <a class="btn btn-emphasis text-light dropdown-toggle p-3" href="#scrollspyHeading1" role="button"
+                    <a class="btn btn-emphasis text-light dropdown-toggle p-2" href="#scrollspyHeading1" role="button"
                         id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Entrée
                     </a>
-                    <ul class="dropdown-menu bg-primary" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink" data-bs-theme="dark">
                         <li><a class="dropdown-item" href="#">Salade composé</a></li>
                         <li><a class="dropdown-item" href="#">Sushi</a></li>
                         <li><a class="dropdown-item" href="#">Toast</a></li>
@@ -64,7 +64,7 @@
                         id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Plat
                     </a>
-                    <ul class="dropdown-menu  bg-primary" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu  bg-dark" aria-labelledby="dropdownMenuLink" data-bs-theme="dark">
                         <li><a class="dropdown-item" href="#">Côte de boeuf</a></li>
                         <li><a class="dropdown-item" href="#">Huîtres</a></li>
                         <li><a class="dropdown-item" href="#">Tartare de boeuf</a></li>
@@ -75,7 +75,7 @@
                         id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Dessert
                     </a>
-                    <ul class="dropdown-menu  bg-primary" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu  bg-dark" aria-labelledby="dropdownMenuLink" data-bs-theme="dark">
                         <li><a class="dropdown-item" href="#">Cheesecake</a></li>
                         <li><a class="dropdown-item" href="#">Choux</a></li>
                         <li><a class="dropdown-item" href="#">Millefeuilles</a></li>
@@ -86,7 +86,7 @@
                         id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Boisson
                     </a>
-                    <ul class="dropdown-menu  bg-primary" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu  bg-dark" aria-labelledby="dropdownMenuLink" data-bs-theme="dark">
                         <li><a class="dropdown-item" href="#">Champagne</a></li>
                         <li><a class="dropdown-item" href="#">Cocktail fruités</a></li>
                         <li><a class="dropdown-item" href="#">Rosé</a></li>
@@ -97,7 +97,7 @@
                         id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Partenaires
                     </a>
-                    <ul class="dropdown-menu  bg-primary" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu  bg-dark" aria-labelledby="dropdownMenuLink" data-bs-theme="dark">
                         <li><a class="dropdown-item" href="#">Théo</a></li>
                         <li><a class="dropdown-item" href="#">Said</a></li>
                         <li><a class="dropdown-item" href="#">Ridha</a></li>
@@ -108,7 +108,10 @@
     </header>
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
         tabindex="0">
-        <h2 class="titre text-center text-uppercase m-5" id="scrollspyHeading1">entrée</h2>
+        <video id="background-video" autoplay loop muted>
+            <source src="./videobackground/3768985-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <h2 class="titre text-light text-center text-uppercase m-5 fw-bold fs-1 " id="scrollspyHeading1">entrée</h2>
         <class class="cardentree d-flex justify-content-evenly">
             <div class="card shadow rounded">
                 <img src="./imgentree/salade.jpg" class="card-img-top" alt="...">
@@ -116,12 +119,12 @@
                     <h2 class="text-center text-capitalize m-2">Salade composé</h2>
                     <div class="price d-flex align-items-end pt-5 pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">40€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Salade Composé"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Salade Composé"
                             data-bs-content="Salade, radis, crevette,pomme de p.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -140,9 +143,9 @@
                                         Votre plat et en préparation
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
+                                        <button type="button" class="btn btn-dark"
                                             data-bs-dismiss="modal">Fermer</button>
-                                        <button type="button" class="btn btn-primary">Payer</button>
+                                        <button type="button" class="btn btn-dark">Payer</button>
                                     </div>
                                 </div>
                             </div>
@@ -156,12 +159,12 @@
                     <h2 class="text-center m-2">Sushi</h2>
                     <div class="prix d-flex pt-5  pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">60€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Riz, Sauce créme, wasabi, cripsy oignon.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -174,12 +177,12 @@
                     <h2 class="text-center m-2">Toast</h2>
                     <div class="prix d-flex pt-5  pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">55€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Toast, omelette, radis, pastrami, persil.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -188,7 +191,7 @@
             </div>
         </class>
         </section>
-        <h2 class="titre text-center text-uppercase m-5" id="scrollspyHeading2">Plats</h2>
+        <h2 class="titre text-center text-light text-uppercase m-5 fw-bold fs-1" id="scrollspyHeading2">Plats</h2>
         <section class="cardplat d-flex justify-content-evenly">
             <div class="card shadow rounded">
                 <img src="./imgplat/cotedeboeuf1.jpg" class="card-img-top" alt="...">
@@ -196,12 +199,12 @@
                     <h2 class="text-center m-2">Côtes de boeuf</h2>
                     <div class="prix d-flex pt-5  pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">90€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Côtes de boeuf cuit a l'ettoufé, piment, persil.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -214,12 +217,12 @@
                     <h2 class="text-center m-2">Huîtres</h2>
                     <div class="prix d-flex pt-5 pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">85€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Huîtres fraiches.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -232,12 +235,12 @@
                     <h2 class="text-center m-2">Tartare de boeuf</h2>
                     <div class="prix d-flex pt-5 pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">100€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Piéce de boeuf, rosalidad mangue.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -245,7 +248,7 @@
                 </div>
             </div>
         </section>
-        <h2 class="titre text-center text-uppercase m-5" id="scrollspyHeading3">dessert</h2>
+        <h2 class="titre text-center text-light text-uppercase m-5 fw-bold fs-1" id="scrollspyHeading3">dessert</h2>
         <section class="carddessert d-flex justify-content-evenly">
             <div class="card shadow rounded">
                 <img src="./imgdessert/cheesecake12.jpg" class="card-img-top" alt="...">
@@ -253,12 +256,12 @@
                     <h2 class="text-center m-2">Cheesecake</h2>
                     <div class="prix d-flex pt-5 pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">60€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Cheesecake, banane grillé, chocolat.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -271,12 +274,12 @@
                     <h2 class="text-center m-2">Choux</h2>
                     <div class="prix d-flex pt-5 pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">65€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Choux, créme, coulis chocolat.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -289,12 +292,12 @@
                     <h2 class="text-center m-2">Millefeuilles</h2>
                     <div class="prix d-flex pt-5 pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">80€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="millefeuilles, caramel.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -302,7 +305,7 @@
                 </div>
             </div>
         </section>
-        <h2 class="titre text-center text-uppercase m-5" id="scrollspyHeading4">boisson</h2>
+        <h2 class="titre text-center text-light text-uppercase m-5 fw-bold fs-1" id="scrollspyHeading4">boisson</h2>
         <section class="cardboisson d-flex justify-content-evenly">
             <div class="card">
                 <img src="./imgboisson/champagne1.jpg" class="card-img-top" alt="...">
@@ -310,12 +313,12 @@
                     <h2 class="text-center m-2">Champagne</h2>
                     <div class="prix d-flex pt-5 pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">150€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Alcoolisé.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -328,12 +331,12 @@
                     <h2 class="text-center m-2">Cocktail fruit frais</h2>
                     <div class="prix d-flex pt-5 pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">90€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Soft fruit, fraise,kiwi,citron vert,mangue.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -346,12 +349,12 @@
                     <h2 class="text-center m-2">Rosé</h2>
                     <div class="prix d-flex pt-5 pb-2 pe-2">
                         <div class="p-2 flex-grow-1 fw-bold">110€</div>
-                        <button type="button" class="btn btn-primary me-3" data-bs-toggle="popover"
-                            data-bs-placement="top" data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
+                        <button type="button" class="btn btn-dark me-3" data-bs-toggle="popover" data-bs-placement="top"
+                            data-bs-custom-class="custom-popover" data-bs-title="Sushi Wasabi"
                             data-bs-content="Vin rosé.">
                             + infos
                         </button>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Commander
                         </button>
@@ -360,8 +363,18 @@
             </div>
         </section>
 
-        <footer>
-
+        <footer class="foot d-flex mt-5 justify-content-around">
+            <div class="Coor text-center fw-bold text-light fs-3">
+                <p class="mt-5">Afpa - Centre du Havre</p>
+                <p>3 Rue Maximilien Robespierre, 76610</p>
+                <p>Le Havre</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2590.4539266296674!2d0.16688697680754366!3d49.51370545436686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02fe40985f1ff%3A0x89e1a03a20457b7b!2sAfpa%20-%20Centre%20du%20Havre!5e0!3m2!1sfr!2sfr!4v1732100726199!5m2!1sfr!2sfr"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="border border-dark"></iframe>
+            </div>
 
         </footer>
 
