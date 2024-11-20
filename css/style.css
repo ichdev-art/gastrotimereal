@@ -23,6 +23,7 @@ body {
     display: flex !important;
     flex-basis: auto;
     justify-content: space-around;
+
 }
 
 #background-video {
