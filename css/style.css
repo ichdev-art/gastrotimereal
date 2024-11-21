@@ -95,8 +95,8 @@ h1 {
 .logo {
     position: absolute;
     z-index: 10;
-    left: 38%;
     opacity: 80%;
+    width: 30%;
 }
 
 .carou {
