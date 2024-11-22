@@ -37,24 +37,6 @@ h1 {
     height: 40rem;
 }
 
-.salade {
-    background-image: url(../imgentree/salade.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.sushi {
-    background-image: url(../imgentree/sushi.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.toast {
-    background-image: url(../imgentree/toast.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 .boeuf {
     background-image: url(../imgplat/cotedeboeuf.jpg);
     background-size: cover;
